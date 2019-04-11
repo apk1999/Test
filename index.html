@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display:flex;
+    }
+    .box{
+        width: 200px;
+        height: 25px;
+        border: 1px solid black;
+        line-height: 25px;
+    }
+    .red{
+        background-color:red;
+        flex-shrink: 3;
+    }
+    .green{
+        background-color: green;
+        
+    }
+    .blue{
+        background-color:blue;
+
+    }
+</style>
+<body>
+   <div class="container">
+       <div class="box red">Red</div>
+       <div class="box green">Green</div>
+       <div class="box blue">Blue</div>
+   </div>
+    <input type="text" list="data" required>
+    <datalist id="data">
+        <select>
+            <option>box</option>
+            <option>apple</option>
+            <option>mango</option>
+        </select>
+    </datalist>
+    <input type="button">
+</body>
+</html>
